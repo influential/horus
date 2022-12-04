@@ -10,7 +10,10 @@ module.exports = {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "assets",
-      "path": "./src/assets/"
+      "path": "./src/assets/",
+      fonts: [
+        `Barlow\:200`
+      ]
     },
     __key: "assets"
   }]
