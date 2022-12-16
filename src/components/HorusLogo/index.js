@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { StaticQuery, graphql } from 'gatsby';
-import {  StaticImage, getImage } from 'gatsby-plugin-image';
+
+import { StaticImage } from 'gatsby-plugin-image';
 
 
 function HorusLogo({ data }) {

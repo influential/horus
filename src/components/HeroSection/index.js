@@ -5,23 +5,19 @@ import poster from '../../assets/hero-vid-still.png';
 import heroVid from '../../assets/hero-vid.mp4';
 
 import { Section } from '../Section';
-
 import { Video } from '../Video';
 import Logo from '../HorusLogo';
 import Nav from '../Nav';
 import KyberInfo from '../KyberInfo';
-
-
 import { Hero, UpperHero } from '../Hero';
 import Button from '../Button';
 
 
-
-
-function HeroSection() {
+export default function HeroSection() {
   return (
     <StyledHeroSection>
-        <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/>
+        <Video type="mp4" poster={poster} name="hero-vid"/>
+        {/* <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/> */}
         <UpperHero>
             <Nav />
         </UpperHero>
@@ -34,8 +30,6 @@ function HeroSection() {
     </StyledHeroSection>
   )
 }
-
-export default HeroSection;
 
 const StyledHeroSection = styled(Section)`
     
@@ -57,7 +51,7 @@ const StyledHeroSection = styled(Section)`
         height: 100vh;
         object-fit: cover;
         /* z-index: -1000; */
-        overflow: hidden
+        overflow: hidden;
     }
 
     @media (max-width: 768px) {
