@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Section } from '../Section';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Video } from '../Video';
-import poster from '../../assets/feature3-still.png';
+import poster from '../../assets/poster-feat3-still.png';
 import feature3 from '../../assets/feature3.mp4';
 
 export default function FeatureSection({ align, image, textData, video }) {
@@ -117,6 +117,8 @@ const TextHalf = styled.div`
         padding: 10px;
         line-height: 2rem;
         font-size: 1.25rem;
+        color: lightgray;
+
     }
 `
 
