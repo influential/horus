@@ -1,5 +1,6 @@
 import React from 'react';
 import { GlobalStyle } from '../../helpers/GlobalStyle';
+import Footer from '../Footer';
 
 
 export default function Layout({ children }) {
@@ -8,6 +9,8 @@ export default function Layout({ children }) {
         <GlobalStyle />
         
         { children }
+
+        <Footer />
     </React.Fragment>
   )
 }

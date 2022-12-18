@@ -11,6 +11,7 @@ import Nav from '../Nav';
 import KyberInfo from '../KyberInfo';
 import { Hero, UpperHero } from '../Hero';
 import Button from '../Button';
+import { navigate } from 'gatsby';
 
 
 export default function HeroSection() {
@@ -23,7 +24,7 @@ export default function HeroSection() {
         </UpperHero>
         <Hero>
             <h1>Kyber HR</h1>
-            <Button text="Learn More" onClick={null}/>          
+            <Button text="Learn More" onClick={() => navigate('/about')}/>          
         </Hero>
         <KyberInfo />
         <Logo />

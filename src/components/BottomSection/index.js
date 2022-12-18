@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AiFillStar } from 'react-icons/ai';
-import SpecsBg from '../../assets/home-specs.png';
 import { StaticImage } from 'gatsby-plugin-image';
+import Button from '../Button';
+import { navigate } from 'gatsby';
 
 export default function BottomSection() {
   return (
@@ -20,7 +21,9 @@ export default function BottomSection() {
         </StarboxContainer>
         <hr />
         <Specs />
-
+        <h1 className='experience-header'>Experience Unparalleled Performance with Horus Arms</h1>
+        <p className='header-subtext'>At Horus not only do we offer superiority with our optics but with other enhanced  accessories as well.</p>
+        <Button className='discover-button' text="Discover" onClick={() => navigate('/products')}/>
     </SmallSection>
   )
 }
@@ -72,14 +75,11 @@ const SpecsContent = () => {
                 <Specbox spec='Field of View' value='28 Feet at 100 yards'/>
                 <Specbox spec='' value=''/>
                 <Specbox spec='' value=''/>
-
             </SpecsContentContainer>
         </div>
         
     )
 }
-
-
 
 
 const SpecsContainer = styled.div`
@@ -110,11 +110,9 @@ const SpecsContainer = styled.div`
         }
 
         @media (max-width: 768px) {
-            /* flex-direction: row; */
             justify-content: center;
             align-items: center;
            
-
             .specs-title {
                 font-size: 3rem;
                 margin: 0px 0px 20px 0;
@@ -124,6 +122,7 @@ const SpecsContainer = styled.div`
     }
     
 `
+
 
 const SpecsContentContainer = styled.div`
     z-index: 10;
@@ -142,9 +141,6 @@ const SpecsContentContainer = styled.div`
     @media (max-width: 768px) {
         width: 80%;
         height: 100%;
-        /* margin: 0; */
-        
-        /* justify-content: space-around; */
     }
 `
 
@@ -160,7 +156,8 @@ const Specbox = ({ spec, value }) => {
 const SpecboxContainer = styled.div`
     padding: 1.5rem;
     text-align: center;
-    width: 200px;
+    width: 203px;
+    height: 100px;
 
     .spec {
         margin: 10px;
@@ -169,7 +166,8 @@ const SpecboxContainer = styled.div`
 
     .value {
         margin: 10px;
-        font-size: 1.25rem;
+        font-size: 1rem;
+        color: lightgray;
     }
 
     @media (max-width: 768px) {
@@ -185,6 +183,7 @@ const SmallSection = styled.section`
     width: 100%;
     background-color: #312624;
     color: white;
+    padding-bottom: 20px;
 
     /* border: 1px solid red; */
 
@@ -212,6 +211,29 @@ const SmallSection = styled.section`
     .main-idea {
         padding: 10px;
         font-size: 2rem;
+    }
+
+    .experience-header {
+        width: 100%;
+        text-align: center;
+        padding: 3rem;
+        padding-bottom: 5px;
+        font-size: 3.5rem;
+        color: rgba(228,114,99);
+
+    }
+
+    .header-subtext{
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    .discover-button {
+        width: 100px;
+        margin: 0 auto;
     }
 
 `
