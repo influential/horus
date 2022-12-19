@@ -12,10 +12,9 @@ export default function Layout({ children }) {
     <React.Fragment>
         <GlobalStyle />
         <Nav page={location.pathname}/>
-        
-        { children }
-
+        <main>{ children }</main>
         <Footer />
     </React.Fragment>
   )
 }
+
