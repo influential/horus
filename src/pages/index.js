@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
 import NextGen from '../components/NextGen';
-import { Section } from '../components/Section';
 import BottomSection from '../components/BottomSection';
 
 
@@ -97,7 +96,7 @@ export default function Home({ data }) {
         image={data.images.edges[3].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature4} 
       />
-      <BottomSection />
+      <BottomSection mobile={windowDimenion.winWidth < 768 ? 'false' : 'true'}/>
         
       
 

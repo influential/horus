@@ -6,7 +6,7 @@ const ButtonContainer = styled.div`
     background-color: tomato;
     color: white;
     margin: 0 auto;
-    padding: 0.2em 0.75em;
+    padding: .35em 0.75em;
     text-align: center;
     cursor: pointer;
     transition: 0.25s;
@@ -21,7 +21,7 @@ const ButtonContainer = styled.div`
 `
 
 
-function Button({text, onClick}) {
+export default function Button({text, onClick}) {
   return (
     <ButtonContainer onClick={onClick}>
         { text }
@@ -29,4 +29,3 @@ function Button({text, onClick}) {
   )
 }
 
-export default Button;

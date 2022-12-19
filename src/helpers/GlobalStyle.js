@@ -7,8 +7,4 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
   }
-  
-  body {
-    
-  }
 `

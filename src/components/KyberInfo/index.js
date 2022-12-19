@@ -37,17 +37,19 @@ const KyberBox = styled.div`
     height: 120px;
     background-color: white;
     border-radius: 4px;
-
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    
     left: 0;
     bottom: 0;
-    margin: 100px;
+    
+    margin: 0px 0px 100px 100px;
 
     @media (max-width: 768px) {
-        margin: 50px 18px;
+        margin: 0px 0px 100px 19px;
+        /* margin-top: 200px; */
         width: 500px;
     }
 `

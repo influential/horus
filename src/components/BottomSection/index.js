@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from '../Button';
 import { navigate } from 'gatsby';
 
-export default function BottomSection() {
+export default function BottomSection({ mobile }) {
   return (
     <SmallSection>
         
@@ -20,7 +20,7 @@ export default function BottomSection() {
             <Starbox title='Illumination Test' />
         </StarboxContainer>
         <hr />
-        <Specs />
+        <Specs mobile={mobile}/>
         <h1 className='experience-header'>Experience Unparalleled Performance with Horus Arms</h1>
         <p className='header-subtext'>At Horus not only do we offer superiority with our optics but with other enhanced  accessories as well.</p>
         <Button className='discover-button' text="Discover" onClick={() => navigate('/products')}/>
@@ -49,16 +49,16 @@ const Rating = ({ title }) => {
     )
 }
 
-const Specs = () => {
+const Specs = ({ mobile }) => {
     return (
         <SpecsContainer>
-            <SpecsContent />
+            <SpecsContent mobile={mobile}/>
             <StaticImage className='specs-img' src='../../assets/home-specs.png' alt=''/>
         </SpecsContainer>
     )
 }
 
-const SpecsContent = () => {
+const SpecsContent = ({ mobile }) => {
     return (
         <div className='content-wrapper content'>
             <h1 className='main-idea content specs-title'>Specs</h1>
@@ -73,8 +73,15 @@ const SpecsContent = () => {
                 <Specbox spec='Warranty' value='2 years'/>
                 <Specbox spec='Eye Relief' value='1.55 Inches'/>
                 <Specbox spec='Field of View' value='28 Feet at 100 yards'/>
-                <Specbox spec='' value=''/>
-                <Specbox spec='' value=''/>
+                {mobile === 'true' 
+                    ?
+                        <>
+                            <Specbox spec='' value=''/>
+                            <Specbox spec='' value=''/>
+                        </> 
+                    : null
+                }
+                
             </SpecsContentContainer>
         </div>
         

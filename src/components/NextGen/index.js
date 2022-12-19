@@ -16,7 +16,7 @@ const NextGenWrapper = styled.div`
     text-align: center;
     padding: 160px 50px;
     font-size: 2rem;
-    margin-top: 180px;
+    /* margin-top: 180px; */
 
     @media (max-width: 768px) {
         font-size: 1.5rem;

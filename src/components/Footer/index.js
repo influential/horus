@@ -9,11 +9,10 @@ export default function Footer() {
 
   useEffect(() => {
     setYear(new Date().getFullYear());
-  })
+  }, []);
 
   return (
     <>
-      
       <FooterContainer>
         <hr />
         <FooterIcons />
@@ -46,9 +45,9 @@ const FooterLinks = () => {
 
 
 const FooterContainer = styled.footer`
-  
   padding: 2rem;
   width: 100%;
+  
   background-color: #312624;
   display: flex;
   flex-direction: column;

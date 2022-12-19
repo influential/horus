@@ -1,14 +1,21 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Nav from '../components/Nav';
+import styled from 'styled-components';
 
-function Products() {
+export default function Products() {
   return (
     <Layout>
-      <Nav />
-      <div>Products</div>
+      <ProductsContainer>
+        {/* <Product />
+        <Product />
+        <Product /> */}
+      </ProductsContainer>
     </Layout>
   )
 }
 
-export default Products;
+const ProductsContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+`

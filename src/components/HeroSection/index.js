@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import poster from '../../assets/hero-vid-still.png';
 import heroVid from '../../assets/hero-vid.mp4';
-
 import { Section } from '../Section';
 import { Video } from '../Video';
-import Logo from '../HorusLogo';
-import Nav from '../Nav';
+import { HomeLogo } from '../HorusLogo';
 import KyberInfo from '../KyberInfo';
 import { Hero, UpperHero } from '../Hero';
 import Button from '../Button';
@@ -20,20 +17,24 @@ export default function HeroSection() {
         <Video type="mp4" poster={poster} name="hero-vid"/>
         {/* <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/> */}
         <UpperHero>
-            <Nav />
+            {/* <Nav home='true'/> */}
         </UpperHero>
         <Hero>
-            <h1>Kyber HR</h1>
+            <h1 className='learn-more'>Kyber HR</h1>
             <Button text="Learn More" onClick={() => navigate('/about')}/>          
         </Hero>
         <KyberInfo />
-        <Logo />
+        <HomeLogo />
     </StyledHeroSection>
   )
 }
 
 const StyledHeroSection = styled(Section)`
+    position: relative;
+    z-index: 10;
+    height: 100vh;
     
+
     .logo {
         position: absolute;
         top: 0;
@@ -49,10 +50,15 @@ const StyledHeroSection = styled(Section)`
         position: absolute;
         display: inline-block;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        /* height: 100vh; */
         object-fit: cover;
-        /* z-index: -1000; */
+        z-index: -1000;
         overflow: hidden;
+    }
+
+    .learn-more {
+        margin-bottom: 30px;
     }
 
     @media (max-width: 768px) {
