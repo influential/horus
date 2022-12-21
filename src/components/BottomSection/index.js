@@ -5,7 +5,7 @@ import Button from '../Button';
 import { navigate } from 'gatsby';
 import ProductSpecs from '../ProductSpecs';
 
-export default function BottomSection({ mobile }) {
+export default function BottomSection() {
     const kyberSpecs = {
         "weight": "5.8 Ounces",
         "dimensions": "130mm x 48.33mm x 55.2mm",
@@ -30,7 +30,7 @@ export default function BottomSection({ mobile }) {
                 <Starbox title='Illumination Test' />
             </StarboxContainer>
             <hr />
-            <ProductSpecs page='/' specs={kyberSpecs} mobile={mobile}/>
+            <ProductSpecs page='/' specs={kyberSpecs}/>
             <h1 className='experience-header'>Experience Unparalleled Performance with Horus Arms</h1>
             <p className='header-subtext'>At Horus not only do we offer superiority with our optics but with other enhanced  accessories as well.</p>
             <Button className='discover-button' text="Discover" onClick={() => navigate('/products')}/>
@@ -87,6 +87,7 @@ const SmallSection = styled.section`
         margin: 0px 0px 10px 40px;
         padding: 10px;
         color: rgba(228,114,99);
+        
     }
 
     .main-idea {
@@ -98,8 +99,8 @@ const SmallSection = styled.section`
         width: 100%;
         text-align: center;
         padding: 3rem;
-        padding-bottom: 5px;
-        font-size: 3.5rem;
+        padding-bottom: 15px;
+        font-size: 2.5rem;
         color: rgba(228,114,99);
 
     }
@@ -150,7 +151,7 @@ const StyledStarbox = styled.div`
         margin-right: 5px;
 
         @media (max-width: 768px) {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 `

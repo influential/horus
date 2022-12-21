@@ -6,7 +6,7 @@ import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
 import NextGen from '../components/NextGen';
 import BottomSection from '../components/BottomSection';
-import { useDimensions } from '../hooks/useDimensions';
+// import { useDimensions } from '../hooks/useDimensions';
 
 
 export const pageQuery = graphql`
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
 `
 
 export default function Home({ data }) {
-  const dimensions = useDimensions();
+  // const dimensions = useDimensions();
 
   return (
     <Layout>
@@ -62,7 +62,7 @@ export default function Home({ data }) {
         textData={data.textData.nodes[0].feature1} 
       />
       <FeatureSection 
-        align={dimensions.winWidth < 768 ? 'right' : 'left'} 
+        align='left' 
         image={data.images.edges[1].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature2} 
       />
@@ -72,11 +72,11 @@ export default function Home({ data }) {
         textData={data.textData.nodes[0].feature3} 
       />
       <FeatureSection 
-        align={dimensions.winWidth < 768 ? 'right' : 'left'} 
+        align='left' 
         image={data.images.edges[3].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature4} 
       />
-      <BottomSection specs={data.kyberSpecs} mobile={dimensions.winWidth < 768 ? 'false' : 'true'}/>
+      <BottomSection specs={data.kyberSpecs}/>
     </Layout>
   )
 }

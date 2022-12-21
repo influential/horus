@@ -14,6 +14,7 @@ export default function FeatureSection({ align, image, textData, video }) {
                     ? <RightAligned image={image} textData={textData} video={video}/> 
                     : <LeftAligned image={image} textData={textData} video={video}/>
                 }
+                {/* <RightAligned image={image} textData={textData} video={video}/> */}
             </ContentContainer>
         </StyledFeatureSection>
     )

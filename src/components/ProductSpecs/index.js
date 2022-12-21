@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
-export default function ProductSpecs({ page, specs, mobile }) {
+export default function ProductSpecs({ page, specs }) {
     useEffect(() => {
         console.log("PAGE: ", page)
     },[page])
@@ -10,7 +10,7 @@ export default function ProductSpecs({ page, specs, mobile }) {
         <SpecsContainer page={page}>
             <div className='content'>
                 <h1>Specs</h1>
-                <SpecsContent page={page} specs={specs} mobile={mobile}/>
+                <SpecsContent page={page} specs={specs}/>
             </div>
             
             {page !== '/' ? null : <StaticImage className='specs-img' src='../../assets/home-specs.png' alt=''/>}
@@ -18,7 +18,7 @@ export default function ProductSpecs({ page, specs, mobile }) {
     )
 }
   
-const SpecsContent = ({ page, specs, mobile }) => {
+const SpecsContent = ({ page, specs }) => {
     const specNameMap = {
         "bodyMaterial": "Body Material",
         "eyeRelief": "Eye Relief",
