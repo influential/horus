@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/horus",
   siteMetadata: {
     title: `horus`,
     siteUrl: `https://www.yourdomain.tld`
