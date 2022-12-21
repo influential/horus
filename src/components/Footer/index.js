@@ -47,6 +47,7 @@ const FooterLinks = () => {
 const FooterContainer = styled.footer`
   padding: 2rem;
   width: 100%;
+  z-index: 10;
   
   background-color: #312624;
   display: flex;

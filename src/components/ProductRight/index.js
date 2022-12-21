@@ -10,15 +10,8 @@ export default function ProductRight({ data, product, mobile }) {
             <h1>Overview</h1>
             <p>{ data.overview }</p>
         </Overview>
-  
-        {/* <ProductSpecs product={product} mobile={mobile}/> */}
 
-        {/* {product === 'kyber' && <KyberSpecs />} */}
-        {/* {product === 'kiros' && <KirosSpecs />} */}
         <ProductSpecs productName={data.shorTitle} specs={data.specs} mobile={mobile}/>
-
-        {/* {product === 'hr45' && <Hr45Specs />} */}
-
 
         <BottomRightSide>
           <div>

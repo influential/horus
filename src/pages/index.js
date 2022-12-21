@@ -45,7 +45,7 @@ export const pageQuery = graphql`
           mainIdea
         }
       }
-    }
+    } 
   }
 `
 
@@ -76,7 +76,7 @@ export default function Home({ data }) {
         image={data.images.edges[3].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature4} 
       />
-      <BottomSection mobile={dimensions.winWidth < 768 ? 'false' : 'true'}/>
+      <BottomSection specs={data.kyberSpecs} mobile={dimensions.winWidth < 768 ? 'false' : 'true'}/>
     </Layout>
   )
 }
