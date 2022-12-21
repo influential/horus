@@ -21,10 +21,7 @@ export default function BottomSection({ mobile }) {
 
     return (
         <SmallSection>
-            
             <h4 className='title'>REAL WORLD TESTING</h4>
-            {/* <h1 className='main-idea'>Real World Testing</h1> */}
-            
             <StarboxContainer>
                 <Starbox title='Drop Test' />   
                 <Starbox title='Vibration Test' />                
@@ -33,7 +30,6 @@ export default function BottomSection({ mobile }) {
                 <Starbox title='Illumination Test' />
             </StarboxContainer>
             <hr />
-            {/* <HomeKyberSpecs mobile={mobile}/> */}
             <ProductSpecs page='/' specs={kyberSpecs} mobile={mobile}/>
             <h1 className='experience-header'>Experience Unparalleled Performance with Horus Arms</h1>
             <p className='header-subtext'>At Horus not only do we offer superiority with our optics but with other enhanced  accessories as well.</p>
