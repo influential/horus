@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 // import { Section } from '../components/Section';
@@ -6,7 +6,7 @@ import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
 import NextGen from '../components/NextGen';
 import BottomSection from '../components/BottomSection';
-
+import { useDimensions } from '../hooks/useDimensions';
 
 
 export const pageQuery = graphql`
@@ -50,27 +50,7 @@ export const pageQuery = graphql`
 `
 
 export default function Home({ data }) {
-  const [windowDimenion, detectHW] = useState({
-    winWidth: window.innerWidth,
-    winHeight: window.innerHeight,
-  })
-
-  const detectSize = () => {
-    detectHW({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    })
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', detectSize);
-    // console.log(winWidth)
-    console.log(windowDimenion)
-
-    return () => {
-      window.removeEventListener('resize', detectSize);
-    }
-  }, [windowDimenion]);
+  const dimensions = useDimensions();
 
   return (
     <Layout>
@@ -82,7 +62,7 @@ export default function Home({ data }) {
         textData={data.textData.nodes[0].feature1} 
       />
       <FeatureSection 
-        align={windowDimenion.winWidth < 768 ? 'right' : 'left'} 
+        align={dimensions.winWidth < 768 ? 'right' : 'left'} 
         image={data.images.edges[1].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature2} 
       />
@@ -92,14 +72,11 @@ export default function Home({ data }) {
         textData={data.textData.nodes[0].feature3} 
       />
       <FeatureSection 
-        align={windowDimenion.winWidth < 768 ? 'right' : 'left'} 
+        align={dimensions.winWidth < 768 ? 'right' : 'left'} 
         image={data.images.edges[3].node.childrenImageSharp[0].gatsbyImageData}
         textData={data.textData.nodes[0].feature4} 
       />
-      <BottomSection mobile={windowDimenion.winWidth < 768 ? 'false' : 'true'}/>
-        
-      
-
+      <BottomSection mobile={dimensions.winWidth < 768 ? 'false' : 'true'}/>
     </Layout>
   )
 }

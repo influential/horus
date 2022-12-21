@@ -34,7 +34,6 @@ const StyledHeroSection = styled(Section)`
     z-index: 10;
     height: 100vh;
     
-
     .logo {
         position: absolute;
         top: 0;

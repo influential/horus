@@ -31,6 +31,114 @@
     "products3": {
         "title": "HR 45 Canted",
         "description": "Picatinny rail mounted canted 45 degree "
+    },
+    "productData": [
+        {
+            "data": {
+                "title": "Horus Arms Kyber HR 1x4",
+                "shortTitle": "kyber",
+                "overview": "Optimal scope for mid range calibers, but still capable with 7.62x51 and .338 Lapua. Standard four times magnification and optional one time allows for unparelled ability to view targets up to 300 yards.",
+                "price": "1,655.00",
+                "includes": [
+                    "Carry pouch",
+                    "Spare O-ring bag",
+                    "Horus Arms Sticker",
+                    "Allen key",
+                    "Lens covers",
+                    "Warranty card"
+                ],
+                "specs": {
+                    "weight": "5.8 Ounces",
+                    "dimensions": "130mm x 48.33mm x 55.2mm",
+                    "magnification": "4x",
+                    "bodyMaterial": "Titanium / Aluminum",
+                    "eyeRelief": "1.55 in.",
+                    "fov": "28 Feet at 100 yards",
+                    "finish": "LINE-X coated in matte Gray",
+                    "illumination": "Fiber Optic cable and Tritium",
+                    "reticleColor": "Red",
+                    "warranty": "2 years"
+                },
+                "images": [
+                    "../assets/purchase-scope-1.png",
+                    "../assets/purchase-scope-2.png",
+                    "../assets/purchase-scope-3.png",
+                    "../assets/purchase-scope-4.png",
+                    "../assets/purchase-scope-5.png"
+                ]
+            }
+        },
+        {"data": {
+            "title": "Kiros HR Muzzle Break",
+            "shortTitle": "kiros",
+            "overview": "Optimal muzzle break options for mid range calibers, such as .556 .300 blackout and .223. Great product for shooters looking for an advantage in any scenario. Provides great recoil reduction while not sacrificing flash reduction.",
+            "price": "195.00",
+            "includes": [
+                "Cleaning kit",
+                "Horus Arms Sticker",
+                "Warranty card"
+            ],
+            "specs": {
+                "weight": "3.8 Ounces",
+                "length": "2.6 Inches",
+                "bodyMaterial": "Titanium",
+                "coating": "DLC coating",
+                "installation": "No permanent modifications",
+                "finish": "Matte Gray",
+                "reduction": "Up to 92 percent",
+                "treatments": "Heat Treated",
+                "warranty": "2 years"
+            },
+            "images": [
+                "../assets/purchase-muzzle-1.png",
+                "../assets/purchase-muzzle-3.png",
+                "../assets/purchase-muzzle-4.png",
+                "../assets/purchase-muzzle-5.png",
+                "../assets/purchase-muzzle-6.png",
+                "../assets/purchase-muzzle-7.png",
+                "../assets/purchase-muzzle-8.png",
+                "../assets/purchase-muzzle-9.png"
+            ]
+        }},
+        {"data": {
+            "title": "HR 45 Canted",
+            "shortTitle": "hr45",
+            "overview": "Our 45 degree canted sight supports almost all models of red dots on the market, allowing for universal use with our customers current products. Also our sleek yet study design allows for great support while limiting weight added to your firearm.",
+            "price": "40.00",
+            "includes": [
+                "Carry pouch",
+                "Horus Arms Sticker",
+                "Spare secure latch",
+                "Warranty card"
+            ],
+            "specs": {
+                "weight": "2.4 Ounces",
+                "length": "One Inch",
+                "angle": "45 degrees",
+                "bodyMaterial": "Titanium",
+                "coating": "DLC coating",
+                "finish": "Matte Gray",
+                "mountType": "Picatinny",
+                "treatments": "Heat Treated",
+                "warranty": "2 years"
+            },
+            "images": [
+                "../assets/purchase-canted-1.png",
+                "../assets/purchase-canted-2.png",
+                "../assets/purchase-canted-3.png",
+                "../assets/purchase-canted-4.png",
+                "../assets/purchase-canted-5.png",
+                "../assets/purchase-canted-6.png",
+                "../assets/purchase-canted-7.png"
+            ]
+        }}
+    ],
+    "testDescriptionData": {
+        "drop": "Our drop test was conducted in two different scenarios. First was with our optic mounted on an AR-10. The gun was dropped from five feet twenty different times. Our second test was conducted with the same rifle, but the drop was from a table. In both cases our scope only received minor scratches and dents.",
+        "vibration": "Subjected to a vibration test which mimicked the conditions the scope might see over its lifetime. Overall good performance.",
+        "elevation": "As one of the main advantages of this scope is the hydrogen filled housing we decided to stress test it. While at an elevation of 10,000 feet the scope showed no signs of leaking gas or faulty o-rings. In the 35,000 halo jump test the scope only showed signs of minor fogging, but zero leaking of gas.",
+        "temperature": "Over the course of one day we subjected our scope to two different temperature tests. The first was being frozen for ten hours outside in 10 degree Fahrenheit weather. The second test consisted of being used on an AR-10 in the Mojave desert for 6 hours. In both cases the scope performed well, showing no signs of damage or coating failure.",
+        "illumination": "While used in low light conditions for 24 hours without exposure to the sun the scope showed little to no fade in illumination of the optic. Even if the fiber optic cable were to fail the tritium would still be sufficient to light up the optic."
     }
 }
   
