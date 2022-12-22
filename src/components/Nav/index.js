@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { MainLogo } from '../HorusLogo';
+import { Location } from '@reach/router';
 
-export default function Nav({ page }) {
+export default function Nav({ location }) {
 
-    if (page === '/') {
+    // useEffect(() => {
+    //     console.log("location: ", location)
+    // }, [location]);
+
+    if (location === '/') {
         return (
             <HomeNavBar>
                 <HomeLinks>
@@ -52,6 +57,8 @@ const MainNavContainer = styled.div`
 `
 
 const MainNavBar = styled.nav`
+    width: 100%;
+    /* height: 150px; */
     display: flex;
     flex-direction: column;
     background-color: #312624;

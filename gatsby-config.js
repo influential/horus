@@ -2,10 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/horus",
+//   pathPrefix: "/horus",
   siteMetadata: {
     title: `horus`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://influential.github.io/horus`
   },
   plugins: [
     "gatsby-plugin-styled-components", 
