@@ -33,6 +33,8 @@ const StyledHeroSection = styled(Section)`
     position: relative;
     z-index: 10;
     height: 100vh;
+    display: flex;
+    justify-content: center;
     
     .logo {
         position: absolute;

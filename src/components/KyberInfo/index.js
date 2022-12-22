@@ -33,7 +33,8 @@ const KyberStat = styled.div`
 
 const KyberBox = styled.div`
     position: absolute;
-    width: 800px;
+    /* width: 800px; */
+    width: 40%;
     height: 120px;
     background-color: white;
     border-radius: 4px;
@@ -49,7 +50,7 @@ const KyberBox = styled.div`
 
     @media (max-width: 768px) {
         margin: 0px 0px 100px 19px;
-        /* margin-top: 200px; */
-        width: 500px;
+        margin: 0 auto;
+        width: 100%;
     }
 `

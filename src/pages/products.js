@@ -79,17 +79,21 @@ export default function Products({ location, data }) {
 // `
 
 const ProductsContainer = styled.div`
-  width: 100%;
-  /* height: 100vh; */
-  background-color: #d3c6c6;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #d3c6c6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding: 20px; */
 
-  a {
-      text-decoration: none;
-      color: black;
-  }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    
+
 `
 
 const ProductCard = ({ image, title, description, href }) => {
@@ -127,5 +131,10 @@ const ProductContainer = styled.div`
   &:hover {
     padding: 10px;
   }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+    }
 `
 

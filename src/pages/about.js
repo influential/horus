@@ -32,8 +32,8 @@ export default function About() {
 
 const Container = styled.div`
   background-color: #312624;
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh; */
+  /* width: 100%; */
 `
 
 const AboutContainer = styled.div`
@@ -44,6 +44,8 @@ const AboutContainer = styled.div`
   /* align-items: center; */
   flex-wrap: wrap;
   background-color: #312624;
+  background-color: #d3c6c6;
+
   
 `
 
@@ -53,9 +55,11 @@ const AboutBox = styled.div`
   text-align: center;
   padding: 30px;
   border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
 
   .title {
-    color: rgba(228,114,99);
+    /* color: rgba(228,114,99); */
+    color: white;
     margin-bottom: 5px;
   }
 
