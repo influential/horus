@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 export const useWindowDimensions = () => {
     const [windowDimenions, detectHW] = useState({
-        winWidth: window.innerWidth,
-        winHeight: window.innerHeight,
+        winWidth: null,
+        winHeight: null,
     });
 
     const detectSize = () => {

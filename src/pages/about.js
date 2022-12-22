@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export default function About() {
   return (
-    <Layout>
+    <Layout location='about'>
       <Container>
         <AboutContainer>
           <AboutBox>
