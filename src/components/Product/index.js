@@ -9,10 +9,11 @@ export default function Product({ pageContext }) {
 
     useEffect(() => {
         console.log(pageContext.product);
+        console.log(pageContext)
     });
 
     return (
-        <Layout>
+        <Layout location={'product'}>
             <ProductContainer>
                 <ProductLeft 
                     product={pageContext.product.shortTitle} 
@@ -32,8 +33,14 @@ const ProductContainer = styled.div`
   background-color: #d3c6c6;
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1400px) {
+      flex-direction: column;
+      /* width: 80%; */
+  } 
+
+  @media (max-width: 768px) {
       flex-direction: column;
   }
 ` 

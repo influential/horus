@@ -31,8 +31,9 @@ export default function ProductRight({ data, product, mobile }) {
 }
   
 const RightSideContainer = styled.div`
-    width: 100%;
-    margin: 20px;
+    width: 75%;
+    /* margin: 20px; */
+    padding: 25px;
     /* height: 400px; */
     /* border: 1px solid red; */
 
@@ -51,7 +52,13 @@ const RightSideContainer = styled.div`
         margin-top: 20px;
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1400px) {
+            /* flex-direction: column; */
+            /* width: 50%; */
+            
+    }
+
+    @media (max-width: 768px) {
         width: 100%;
         margin: 0;
     }
@@ -68,14 +75,15 @@ const RightSideContainer = styled.div`
 
         }
 
-        text {
+        p {
             font-size: 1.25rem;
+            margin-bottom: 10px;
         }
 
         @media (max-width: 1500px) {
             width: 100%;
             /* margin: 10px; */
-            padding: 20px;
+            /* padding: 20px; */
             margin: 0;
         }
 `

@@ -68,22 +68,20 @@ const SpecsContainer = styled.div`
     flex-direction: column;
     z-index: 10;
     /* position: relative; */
+    margin: ${ props => props.page !== '/' ? '0px' : '0px' };
     height: ${ props => props.page !== '/' ? 'auto' : '100vh' };
     position: ${props => props.page !== '/' ? null : 'relative'};
     
-
-    
-
     .specs-img {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         position: absolute;
         z-index: 0;
     }
 
     .content {
         z-index: 10;
-        /* width: 100%; */
+        width: ${ props => props.page !== '/' ? ' null' : '40%' };
         margin: ${ props => props.page !== '/' ? '0px 10px 0px 0px' : '0px 0px 10px 70px' };
         
         h1 {
@@ -94,7 +92,20 @@ const SpecsContainer = styled.div`
         }
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1400px) {
+            /* flex-direction: column; */
+            width: 100%;
+            /* justify-content: center; */
+            /* align-items: center; */
+            margin: ${ props => props.page !== '/' ? '0px' : '0px' };
+
+            .content {
+                width: ${ props => props.page !== '/' ? ' null' : '80%' };
+                margin: 0 auto;
+            }
+    }
+
+    @media (max-width: 768px) {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -107,6 +118,7 @@ const SpecsContainer = styled.div`
         }
 
         .content {
+            width: 100%;
             margin: 0px 0px 20px 0px;
             display: flex;
             flex-direction: column;
@@ -118,10 +130,10 @@ const SpecsContainer = styled.div`
 
 const SpecsContentContainer = styled.div`
     z-index: 10;
-    width: 900px;
+    /* width: 900px; */
     border-radius: 5px;
-    
-    padding: 10px;
+    width: 100%;
+    /* padding: 10px; */
     background: rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
     display: flex;
@@ -129,15 +141,21 @@ const SpecsContentContainer = styled.div`
     align-items: center;
     flex-wrap: wrap;
 
-    @media (max-width: 1500px) {
-        width: 80%;
+    @media (max-width: 1000px) {
+        /* width: 80%; */
         height: 100%;
         margin: ${props => props.page !== '/' ? '0 auto' : null};
+
+    }
+
+    @media (max-width: 768px) {
+        margin: ${ props => props.page !== '/' ? '0px' : '20px' };
+        width: ${props => props.page !== '/' ? '100%' : '80%'};
     }
 `
 
 const SpecboxContainer = styled.div`
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     width: 203px;
     height: 100px;
@@ -154,10 +172,9 @@ const SpecboxContainer = styled.div`
         color: lightgray;
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 768px) {
         justify-content: center;
         padding: 5px;
-        
         margin: 0;
     }
 `

@@ -62,7 +62,7 @@ const LeftAligned = ({image, textData, video}) => {
 }
 
 const StyledFeatureSection = styled(Section)`
-
+    height: auto;
 `
 
 const ContentContainer = styled.div`

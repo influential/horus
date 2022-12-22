@@ -10,41 +10,72 @@ export default function ProductLeftSide({ data }) {
     return (
         <LeftSideContainer>
             <h1 className='title'>{data.title}</h1>
-            <Carousel showThumbs={false} infiniteLoop={true}>
-                {
-                    data.images.map((image, idx) => {
-                        // console.log(image.childrenImageSharp[0].gatsbyImageData)
-                        return (
-                            <div key={idx}>
-                                <GatsbyImage 
-                                    image={image.childrenImageSharp[0].gatsbyImageData} 
-                                    alt='image'
-                                    placeholder='outline'
-                                />
-                            </div>
-                        )
-                    })
-                }
-            </Carousel>
+            <div className='carousel-wrapper'>
+                <Carousel className='carousel' showThumbs={false} infiniteLoop={true}>
+                    {
+                        data.images.map((image, idx) => {
+                            // console.log(image.childrenImageSharp[0].gatsbyImageData)
+                            return (
+                                <div key={idx}>
+                                    <GatsbyImage 
+                                        image={image.childrenImageSharp[0].gatsbyImageData} 
+                                        alt='image'
+                                        placeholder='outline'
+                                    />
+                                </div>
+                            )
+                        })
+                    }
+                </Carousel>
+            </div>
         </LeftSideContainer>
     )
 }
   
   const LeftSideContainer = styled.div`
     width: 100%;
-    width: 1500px;
-    margin: 20px;
+    /* height: 100%; */
+    /* width: 1500px; */
+    /* padding: */
+    /* margin: 20px; */
     display: flex;
     flex-direction: column;
-  
-    @media (max-width: 1500px) {
+    align-items: center;
+
+    .carousel-wrapper {
+        @media (max-width: 1400px) {
+            /* flex-direction: column; */
+            width: 75%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            /* flex-direction: column; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .carousel {
         width: 100%;
+    }
+  
+    @media (max-width: 1400px) {
+        width: 75%;
         margin: 0;
   
         .title {
           text-align: center;
           margin-top: 15px;
         }
+    }
+    
+    @media (max-width: 1400px) {
+
+        width: 100%;
+        
     }
   
     /* border: 1px solid green; */

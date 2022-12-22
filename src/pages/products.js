@@ -40,8 +40,8 @@ export const pageQuery = graphql`
 
 export default function Products({ location, data }) {
   return (
-    <Layout>
-      <Container>
+    <Layout location={location}>
+      
         <ProductsContainer>
           <ProductCard
             href={'/products/kyber'} 
@@ -61,21 +61,22 @@ export default function Products({ location, data }) {
             title={data.textData.nodes[0].products3['title']} 
             description={data.textData.nodes[0].products3['description']}
           />
+          <ProductCard />
         </ProductsContainer>
-      </Container>
+      
     </Layout>
   )
 }
 
-const Container = styled.div`
-  background-color: #d3c6c6;
-  height: 100vh;
-  width: 100%;
+// const Container = styled.div`
+//   /* background-color: #d3c6c6; */
+//   /* height: 100vh; */
+//   width: 100%;
 
-  @media (max-width: 768px) {
-    height: 100%;
-  }
-`
+//   @media (max-width: 768px) {
+//     height: 100%;
+//   }
+// `
 
 const ProductsContainer = styled.div`
   width: 100%;
