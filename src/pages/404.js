@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 export default function Error404() {
   return (
-    <Layout>
+    <Layout location='404'>
       <div>Error</div>
     </Layout>
   )
