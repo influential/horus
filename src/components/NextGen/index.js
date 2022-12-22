@@ -14,13 +14,13 @@ const NextGenWrapper = styled.div`
     width: 100%;
     color: white;
     text-align: center;
-    padding: 160px 50px;
+    /* padding: 160px 50px; */
     font-size: 2rem;
     /* margin-top: 180px; */
+    padding: 50px;
 
     @media (max-width: 768px) {
-        font-size: 1.5rem;
-        padding: 100px;
+        font-size: 1rem;
     }
 `
 

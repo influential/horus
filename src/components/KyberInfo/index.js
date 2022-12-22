@@ -52,5 +52,6 @@ const KyberBox = styled.div`
         margin: 0px 0px 100px 19px;
         margin: 0 auto;
         width: 100%;
+        display: none;
     }
 `

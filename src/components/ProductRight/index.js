@@ -14,17 +14,20 @@ export default function ProductRight({ data, product, mobile }) {
         <ProductSpecs productName={data.shorTitle} specs={data.specs} mobile={mobile}/>
 
         <BottomRightSide>
-          <div>
-            <h1 className='includes'>Includes</h1>
-            <ul>
-                {data.includes.map((item, idx) => {
-                    return(
-                        <li key={idx}>{item}</li>
-                    )
-                })}
-            </ul>
-          </div>
-          <h1 className='retail'>Retail ${data.price}</h1>
+            <div className='right-side-box'>
+                <h1 className='includes'>Includes</h1>
+                <ul>
+                    {data.includes.map((item, idx) => {
+                        return(
+                            <li key={idx}>{item}</li>
+                        )
+                    })}
+                </ul>
+            </div>
+            <div className='right-side-box'>
+                <h1 className='retail'>Retail ${data.price}</h1>
+            </div>
+
         </BottomRightSide>
       </RightSideContainer>
     )
@@ -51,6 +54,8 @@ const RightSideContainer = styled.div`
     .retail {
         margin-top: 20px;
     }
+    
+    
 
     @media (max-width: 1400px) {
             /* flex-direction: column; */
@@ -61,6 +66,7 @@ const RightSideContainer = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         margin: 0;
+
     }
     `
 
@@ -92,9 +98,19 @@ const RightSideContainer = styled.div`
         margin: auto 0;
         width: 100%;
         margin-bottom: 20px;
+        display: flex;
+        /* justify-content: space-around; */
+        
+        .bottom-right-content {
+            display: flex;
+            justify-content: center;
+        }
 
         @media (max-width: 1500px) {
             display: flex;
             justify-content: space-around;
+            .right-side-box {
+                width: 50%;
+            }
         }
     `

@@ -16,12 +16,9 @@ export default function HeroSection() {
     <StyledHeroSection>
         <Video type="mp4" poster={poster} name="hero-vid"/>
         {/* <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/> */}
-        <UpperHero>
-            {/* <Nav home='true'/> */}
-        </UpperHero>
         <Hero>
             <h1 className='learn-more'>Kyber HR</h1>
-            <Button text="Learn More" onClick={() => navigate('/about')}/>          
+            <Button className='button' text="Learn More" onClick={() => navigate('/about')}/>          
         </Hero>
         <KyberInfo />
         <HomeLogo />
@@ -59,7 +56,7 @@ const StyledHeroSection = styled(Section)`
     }
 
     .learn-more {
-        margin-bottom: 30px;
+        margin-bottom: 300px;
     }
 
     @media (max-width: 768px) {

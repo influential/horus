@@ -150,14 +150,15 @@ const SpecsContentContainer = styled.div`
 
     @media (max-width: 768px) {
         margin: ${ props => props.page !== '/' ? '0px' : '20px' };
-        width: ${props => props.page !== '/' ? '100%' : '80%'};
+        width: ${props => props.page !== '/' ? '100%' : '90%'};
     }
 `
 
 const SpecboxContainer = styled.div`
     padding: 1rem;
     text-align: center;
-    width: 203px;
+    width: 150px;
+    /* width: 11rem; */
     height: 100px;
 
     .spec {

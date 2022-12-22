@@ -40,8 +40,12 @@ export const Hero = styled.div`
     font-weight: normal;
     font-size: 5em;
 
+
+
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+
+        margin-top: 120px;
     }
 `
