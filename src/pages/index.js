@@ -61,7 +61,13 @@ export default function Home({ location, data }) {
 
     return (
         <Layout location={location}>
-            {home}
+            {/* {home} */}
+            <DesktopHome>
+                <Alternating data={data}/>
+            </DesktopHome>
+            <MobileHome>
+                <Stacked data={data}/>
+            </MobileHome>
         </Layout>
     )
 }
@@ -126,5 +132,18 @@ const Alternating = ({ data }) => {
         </>
     )
 }
+
+const MobileHome = styled.div`
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+`
+
+const DesktopHome = styled.div`
+    @media (max-width: 768px) {
+        display: none;
+    }
+`
 
 

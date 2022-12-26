@@ -56,7 +56,7 @@ const StyledHeroSection = styled(Section)`
     }
 
     .learn-more {
-        margin-bottom: 300px;
+        margin-bottom: 30px;
     }
 
     @media (max-width: 768px) {
