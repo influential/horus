@@ -2,45 +2,37 @@ import React, {useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { MainLogo } from '../HorusLogo';
-import { Location } from '@reach/router';
 
-export default function Nav({ location }) {
-
-    // useEffect(() => {
-    //     console.log("location: ", location)
-    // }, [location]);
-
-    if (location === '/') {
-        return (
-            <HomeNavBar>
-                <HomeLinks>
+export function Nav() {
+    return (
+        <MainNavBar>
+            <MainNavContainer>
+                <Link to='/' activeClassName="active">
+                    <MainLogo className='logo'/>
+                </Link>
+                <div></div>
+                <div></div>
+                <MainLinks>
                     <Link to='/' activeClassName="active">Home</Link>
                     <Link to='/products' activeClassName="active">Products</Link>
                     <Link to='/about' activeClassName="active">About</Link>
-                </HomeLinks>
-            </HomeNavBar>
-        )
-    } else {
-        return (
-            <MainNavBar>
-                <MainNavContainer>
-                    <Link to='/' activeClassName="active">
-                        <MainLogo className='logo'/>
-                    </Link>
-                    <div></div>
-                    <div></div>
-                    <MainLinks>
-                        <Link to='/' activeClassName="active">Home</Link>
-                        <Link to='/products' activeClassName="active">Products</Link>
-                        <Link to='/about' activeClassName="active">About</Link>
-                    </MainLinks>
-                </MainNavContainer>
-                <hr />
-            </MainNavBar>
-        )
-        
-    }
-    
+                </MainLinks>
+            </MainNavContainer>
+            <hr />
+        </MainNavBar>
+    )
+}
+
+export function HomeNav() {
+    return (
+        <HomeNavBar>
+            <HomeLinks>
+                <Link to='/' activeClassName="active">Home</Link>
+                <Link to='/products' activeClassName="active">Products</Link>
+                <Link to='/about' activeClassName="active">About</Link>
+            </HomeLinks>
+        </HomeNavBar>
+    )
 }
 
 const MainNavContainer = styled.div`

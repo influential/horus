@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import HomeLayout from '../components/Layout/HomeLayout';
 import { graphql } from 'gatsby';
 // import { Section } from '../components/Section';
 import HeroSection from '../components/HeroSection';
 import FeatureSection from '../components/FeatureSection';
 import NextGen from '../components/NextGen';
 import BottomSection from '../components/BottomSection';
-import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 
 export const pageQuery = graphql`
@@ -51,16 +50,8 @@ export const pageQuery = graphql`
 `
 
 export default function Home({ location, data }) {
-    const dimensions = useWindowDimensions();
-    const home = 
-    typeof window !== 'undefined' ? 
-        dimensions.winWidth > 768 
-            ? <Alternating data={data}/>    // Desktop
-            : <Stacked data={data}/>    // Mobile
-        : null;
-
     return (
-        <Layout location={location}>
+        <HomeLayout location={location}>
             {/* {home} */}
             <DesktopHome>
                 <Alternating data={data}/>
@@ -68,7 +59,7 @@ export default function Home({ location, data }) {
             <MobileHome>
                 <Stacked data={data}/>
             </MobileHome>
-        </Layout>
+        </HomeLayout>
     )
 }
 
