@@ -40,7 +40,7 @@ export default function ProductLeftSide({ data }) {
     /* margin: 20px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px;
 
     .carousel-wrapper {
         @media (max-width: 1400px) {
@@ -55,6 +55,7 @@ export default function ProductLeftSide({ data }) {
             width: 100%;
             display: flex;
             justify-content: center;
+
         }
     }
 
@@ -73,8 +74,9 @@ export default function ProductLeftSide({ data }) {
     }
     
     @media (max-width: 1400px) {
-
         width: 100%;
+        align-items: center;
+        padding: 0;
         
     }
   

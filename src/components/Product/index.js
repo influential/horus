@@ -33,7 +33,7 @@ const ProductContainer = styled.div`
   background-color: #d3c6c6;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 
   @media (max-width: 1400px) {
       flex-direction: column;
