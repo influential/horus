@@ -100,7 +100,7 @@ const RightSideContainer = styled.div`
         width: 100%;
         margin-bottom: 20px;
         display: flex;
-        /* justify-content: space-around; */
+        justify-content: space-around;
         
         .bottom-right-content {
             display: flex;

@@ -64,7 +64,6 @@ const SmallSection = styled.section`
     background-color: #312624;
     color: white;
     padding-bottom: 20px;
-
     /* border: 1px solid red; */
 
     hr {

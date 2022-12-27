@@ -43,25 +43,28 @@ export default function Products({ location, data }) {
     <Layout location={location}>
       
         <ProductsContainer>
-          <ProductCard
-            href={'/products/kyber'} 
-            image={data.images.edges[0].node.childrenImageSharp[0].gatsbyImageData} 
-            title={data.textData.nodes[0].products1['title']} 
-            description={data.textData.nodes[0].products1['description']}
-          />
-          <ProductCard
-            href={'/products/kiros'} 
-            image={data.images.edges[1].node.childrenImageSharp[0].gatsbyImageData} 
-            title={data.textData.nodes[0].products2['title']} 
-            description={data.textData.nodes[0].products2['description']}
-          />
-          <ProductCard
-            href={'/products/hr45'} 
-            image={data.images.edges[2].node.childrenImageSharp[0].gatsbyImageData} 
-            title={data.textData.nodes[0].products3['title']} 
-            description={data.textData.nodes[0].products3['description']}
-          />
-          <ProductCard />
+            <ProductCard
+                href={'/products/kyber'} 
+                image={data.images.edges[0].node.childrenImageSharp[0].gatsbyImageData} 
+                title={data.textData.nodes[0].products1['title']} 
+                description={data.textData.nodes[0].products1['description']}
+            />
+            <ProductCard
+                href={'/products/kiros'} 
+                image={data.images.edges[1].node.childrenImageSharp[0].gatsbyImageData} 
+                title={data.textData.nodes[0].products2['title']} 
+                description={data.textData.nodes[0].products2['description']}
+            />
+            <ProductCard
+                href={'/products/hr45'} 
+                image={data.images.edges[2].node.childrenImageSharp[0].gatsbyImageData} 
+                title={data.textData.nodes[0].products3['title']} 
+                description={data.textData.nodes[0].products3['description']}
+            />
+            <ProductCard href={'/'}/>
+            <ProductCard />
+            <ProductCard />
+          
         </ProductsContainer>
       
     </Layout>
