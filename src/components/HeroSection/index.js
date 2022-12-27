@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import poster from '../../assets/hero-vid-still.png';
-import heroVid from '../../assets/hero-vid.mp4';
+import poster from '../../assets/hero-vid-still.jpg';
+import heroVid from '../../assets/hero-vid-small.mp4';
 import { Section } from '../Section';
 import { Video } from '../Video';
 import { HomeLogo } from '../HorusLogo';
 import KyberInfo from '../KyberInfo';
-import { Hero, UpperHero } from '../Hero';
+import { Hero } from '../Hero';
 import Button from '../Button';
 import { navigate } from 'gatsby';
 
@@ -14,8 +14,8 @@ import { navigate } from 'gatsby';
 export default function HeroSection() {
   return (
     <StyledHeroSection>
-        <Video type="mp4" poster={poster} name="hero-vid"/>
-        {/* <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/> */}
+        {/* <Video type="mp4" poster={poster} name="hero-vid"/> */}
+        <Video src={heroVid} type="mp4" poster={poster} name="hero-vid"/>
         <Hero>
             <h1 className='learn-more'>Kyber HR</h1>
             <Button className='button' text="Learn More" onClick={() => navigate('/about')}/>          

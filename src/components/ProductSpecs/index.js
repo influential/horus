@@ -13,7 +13,7 @@ export default function ProductSpecs({ page, specs }) {
                 <SpecsContent page={page} specs={specs}/>
             </div>
             
-            {page !== '/' ? null : <StaticImage className='specs-img' src='../../assets/home-specs.png' alt=''/>}
+            {page !== '/' ? null : <StaticImage className='specs-img' src='../../assets/home-specs.jpg' alt=''/>}
         </SpecsContainer>
     )
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { GlobalStyle } from '../../helpers/GlobalStyle';
 import Footer from '../Footer';
 import { HomeNav } from '../Nav';

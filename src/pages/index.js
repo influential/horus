@@ -17,7 +17,7 @@ export const pageQuery = graphql`
           id
           name
           childrenImageSharp {
-            gatsbyImageData
+            gatsbyImageData(formats: WEBP, webpOptions: {quality: 80})
           }
         }
       }

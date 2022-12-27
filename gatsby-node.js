@@ -32,7 +32,7 @@ exports.createPages = async({ graphql, actions }) => {
                         }
                         images {
                             childrenImageSharp {
-                                gatsbyImageData(placeholder: BLURRED)
+                                gatsbyImageData(formats: WEBP, webpOptions: {quality: 80})
                             }
                         }
                     }

@@ -5,7 +5,6 @@ import { Carousel } from 'react-responsive-carousel';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 
-
 export default function ProductLeftSide({ data }) {
     return (
         <LeftSideContainer>
@@ -21,6 +20,7 @@ export default function ProductLeftSide({ data }) {
                                         image={image.childrenImageSharp[0].gatsbyImageData} 
                                         alt='image'
                                         placeholder='outline'
+                                        loading='eager'
                                     />
                                 </div>
                             )

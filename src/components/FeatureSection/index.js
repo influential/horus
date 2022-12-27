@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Section } from '../Section';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Video } from '../Video';
-import poster from '../../assets/poster-feat3-still.png';
+import poster from '../../assets/poster-feat3-still.jpg';
 import feature3 from '../../assets/feature3.mp4';
 
 export default function FeatureSection({ align, image, textData, video }) {
@@ -25,8 +25,19 @@ const RightAligned = ({image, textData, video}) => {
         <>  
             <ImageHalf>
                 { video === 'true'
-                    ? <Video className='feature3-vid' type="mp4" src={feature3} poster={poster} name="feature3-vid"/> 
-                    : <GatsbyImage className='gatsby-image' image={image} alt='image' placeholder='blurred'/> 
+                    ? <Video 
+                        className='feature3-vid' 
+                        type="mp4" src={feature3} 
+                        poster={poster} 
+                        name="feature3-vid"
+                    /> 
+                    : <GatsbyImage 
+                        className='gatsby-image' 
+                        image={image} 
+                        alt='image'
+                        placeholder='blurred' 
+                        loading='eager'
+                    /> 
                 }
                 
             </ImageHalf>
@@ -54,6 +65,7 @@ const LeftAligned = ({image, textData, video}) => {
                     image={image} 
                     alt='image'
                     placeholder='blurred'
+                    loading='eager'
                 />
             </ImageHalf>
             
