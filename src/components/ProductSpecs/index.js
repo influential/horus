@@ -81,7 +81,7 @@ const SpecsContainer = styled.div`
 
     .content {
         z-index: 10;
-        width: ${ props => props.page !== '/' ? ' null' : '40%' };
+        width: ${ props => props.page !== '/' ? ' null' : '30%' };
         margin: ${ props => props.page !== '/' ? '0px 10px 0px 0px' : '0px 0px 10px 70px' };
         
         h1 {

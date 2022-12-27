@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Section } from '../Section';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Video } from '../Video';
-import poster from '../../assets/poster-feat3-still.jpg';
+import poster from '../../assets/poster-feat3-still.png';
 import feature3 from '../../assets/feature3.mp4';
 
 export default function FeatureSection({ align, image, textData, video }) {
