@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Layout from '../Layout';
 import ProductLeft from '../ProductLeft';
@@ -7,10 +7,10 @@ import ProductRight from '../ProductRight';
 export default function Product({ pageContext }) {
     // const dimensions = useDimensions();
 
-    useEffect(() => {
-        console.log(pageContext.product);
-        console.log(pageContext)
-    });
+    // useEffect(() => {
+    //     console.log(pageContext.product);
+    //     console.log(pageContext)
+    // });
 
     return (
         <Layout location={'product'}>

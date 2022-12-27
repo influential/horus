@@ -61,10 +61,6 @@ export default function Products({ location, data }) {
                 title={data.textData.nodes[0].products3['title']} 
                 description={data.textData.nodes[0].products3['description']}
             />
-            <ProductCard href={'/'}/>
-            <ProductCard />
-            <ProductCard />
-          
         </ProductsContainer>
       
     </Layout>

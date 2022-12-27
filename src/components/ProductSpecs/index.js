@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
 export default function ProductSpecs({ page, specs }) {
-    useEffect(() => {
-        console.log("PAGE: ", page)
-    },[page])
     return (
         <SpecsContainer page={page}>
             <div className='content'>
@@ -42,7 +39,7 @@ const SpecsContent = ({ page, specs }) => {
     return (
         <SpecsContentContainer page={page}>
             {Object.entries(specs).map(([spec, value], idx) => {
-                console.log(`${spec}:${value}`)
+                // console.log(`${spec}:${value}`)
                 return (value === null 
                     ? null 
                     : <Specbox page={page} key={idx} spec={specNameMap[spec]} value={value}/>

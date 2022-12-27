@@ -42,7 +42,7 @@ exports.createPages = async({ graphql, actions }) => {
     `)
 
     data.helpersJson.productData.forEach(product => {
-        console.log(product)
+        // console.log(product);
         actions.createPage({
             path: '/products/' + product.data.shortTitle,
             component: path.resolve('./src/components/Product/index.js'),

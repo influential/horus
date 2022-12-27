@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { navigate } from 'gatsby';
+// import { Link, navigate } from 'gatsby';
 
 import { AiOutlineTwitter, AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai';
 
@@ -36,9 +36,15 @@ const FooterIcons = () => {
 const FooterLinks = () => {
   return (
     <LinksContainer>
-      <AiOutlineTwitter className='icon' onClick={() => navigate('https://twitter.com/HorusArms')}/>
-      <AiFillYoutube className='icon' onClick={() => navigate('https://www.youtube.com/channel/UC7mSF7v-7Z8l7q-4biK6SUw')}/>
-      <AiOutlineInstagram className='icon' onClick={() => navigate('https://www.instagram.com/horusarms/')}/>
+        <a href='https://twitter.com/HorusArms' target="_blank" rel="noopener noreferrer">
+            <AiOutlineTwitter className='icon'/>
+        </a>
+        <a href='https://www.youtube.com/channel/UC7mSF7v-7Z8l7q-4biK6SUw' target="_blank" rel="noopener noreferrer">
+            <AiFillYoutube className='icon' />
+        </a>
+        <a href='https://www.instagram.com/horusarms/' target="_blank" rel="noopener noreferrer">
+            <AiOutlineInstagram className='icon' />
+        </a>
     </LinksContainer>
   )
 }
@@ -81,20 +87,24 @@ const IconsContainer = styled.div`
 
 `
 const LinksContainer = styled.div`
-  display: flex;
-  color: lightgray;
-  padding: 10px;
-  font-size: 2.5rem;
-  
+    display: flex;
+    color: lightgray;
+    padding: 10px;
+    font-size: 2.5rem;
 
-  .icon {
-    cursor: pointer;
-    margin: 5px;
-    transition: 0.35s;
-    
-    &:hover {
-      color: rgba(228,114,99)
+    a {
+        text-decoration: none;
+        color: lightgray;
     }
-  }
+
+    .icon {
+        cursor: pointer;
+        margin: 5px;
+        transition: 0.35s;
+        
+        &:hover {
+        color: rgba(228,114,99)
+        }
+    }
 `
 

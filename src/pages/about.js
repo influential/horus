@@ -9,19 +9,19 @@ export default function About() {
         <AboutContainer>
           <AboutBox>
             <h1 className='title'>Our Mission</h1>
-            <text className='text'>At Horus we strike to manufacture top of line products that save lives. We do this by using combining creative designs with industry leading engineering. All of our products are crafted with the intention that whether you are a civilian, Law Enforcement or Military you will gain a tactical advantage when operating your firearm.</text>
+            <p className='text'>At Horus we strike to manufacture top of line products that save lives. We do this by using combining creative designs with industry leading engineering. All of our products are crafted with the intention that whether you are a civilian, Law Enforcement or Military you will gain a tactical advantage when operating your firearm.</p>
           </AboutBox>
           <AboutBox>
             <h1 className='title'>About Horus Arms</h1>
-            <text className='text'>We strive to create a company with employees that are like minded, and industry professionals. Currently we are building a diverse team with the intentions to support the firearms industry but also help and support the communities we live and work in.</text>
+            <p className='text'>We strive to create a company with employees that are like minded, and industry professionals. Currently we are building a diverse team with the intentions to support the firearms industry but also help and support the communities we live and work in.</p>
           </AboutBox>
           <AboutBox>
             <h1 className='title'>Made in America</h1>
-            <text className='text'>All of our products that are available come with our guarantee the they are machined, manufactured, engineered and designed at our companies headquarters in Fort Worth. Having our production warehouses in Texas allows us to help support the people of Fort Worth by employing over 100 members of the community.</text>
+            <p className='text'>All of our products that are available come with our guarantee the they are machined, manufactured, engineered and designed at our companies headquarters in Fort Worth. Having our production warehouses in Texas allows us to help support the people of Fort Worth by employing over 100 members of the community.</p>
           </AboutBox>
           <AboutBox>
             <h1 className='title'>Headquarters</h1>
-            <text className='text'>14551 Lilyfrost Drive, P.O. Box  637781, Fort Worth, Texas</text>
+            <p className='text'>14551 Lilyfrost Drive, P.O. Box  637781, Fort Worth, Texas</p>
           </AboutBox>
         </AboutContainer>
       </Container>
