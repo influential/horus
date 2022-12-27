@@ -92,7 +92,7 @@ const SpecsContainer = styled.div`
         }
     }
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1200px) {
             /* flex-direction: column; */
             width: 100%;
             /* justify-content: center; */

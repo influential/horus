@@ -39,6 +39,7 @@ const RightSideContainer = styled.div`
     padding: 25px;
     /* height: 400px; */
     /* border: 1px solid red; */
+    margin: 0 auto;
 
     .includes {
         font-size: 2rem;

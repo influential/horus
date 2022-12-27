@@ -36,7 +36,7 @@ const ProductContainer = styled.div`
   /* align-items: center; */
 
   @media (max-width: 1400px) {
-      flex-direction: column;
+      /* flex-direction: column; */
       /* width: 80%; */
   } 
 
